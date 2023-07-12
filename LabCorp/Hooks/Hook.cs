@@ -1,10 +1,26 @@
-using System;
-using TechTalk.SpecFlow;
+using LabCorp.Drivers;
+using OpenQA.Selenium;
 
-namespace LabCorp.Hooks
+[Binding]
+public class Hooks
 {
-    [Binding]
-    public class Hooks
+    private readonly ScenarioContext _scenarioContext;
+
+    public Hooks(ScenarioContext scenarioContext)
     {
+        _scenarioContext = scenarioContext;
+    }
+    
+    [BeforeScenario]
+    public void BeforeScenario()
+    {
+        SeleniumDriver seleniumDriver = new SeleniumDriver(_scenarioContext);
+        _scenarioContext.Set(seleniumDriver, "SeleniumDriver");
+    }
+
+    [AfterScenario]
+    public void AfterScenario()
+    {
+        _scenarioContext.Get<IWebDriver>("WebDriver").Quit();
     }
 }
