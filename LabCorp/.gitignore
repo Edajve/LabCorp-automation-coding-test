@@ -1,0 +1,17 @@
+riderModule.iml
+/_ReSharper.Cach
+
+.idea/
+
+driver.log
+geckodriver.log
+msedgedriver.log
+chromedriver.log
+
+TestResults/
+
+*.http
+*.rest
+
+bin/
+obj/
