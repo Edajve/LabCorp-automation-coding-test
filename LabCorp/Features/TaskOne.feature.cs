@@ -115,6 +115,9 @@ namespace LabCorp.Features
 #line 7
         testRunner.Given("user navigates to career page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
+#line 8
+        testRunner.Then("user searches for \"Route Coordinator/Disptacher\" Career position", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
             }
             this.ScenarioCleanup();
         }
