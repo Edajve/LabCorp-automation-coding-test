@@ -21,6 +21,6 @@ public class Hooks
     [AfterScenario]
     public void AfterScenario()
     {
-        _scenarioContext.Get<IWebDriver>("WebDriver").Quit();
+        _scenarioContext.Get<IWebDriver>("webDriver").Quit();
     }
 }

@@ -16,13 +16,11 @@ public class SeleniumDriver
 
     public IWebDriver getDriver()
     {
-        var chromeOptions = new ChromeDriver();
-        
-        _driver = new RemoteWebDriver(new Uri("www.labcorp.com"), chromeOptions.Capabilities);
-        
+        var chromeOptions = new ChromeOptions();
+        chromeOptions.AddArguments("--start-maximized");
+
+        _driver = new ChromeDriver(chromeOptions);
         _scenarioContext.Set(_driver, "webDriver");
-        
-        _driver.Manage().Window.Maximize();
 
         return _driver;
     }

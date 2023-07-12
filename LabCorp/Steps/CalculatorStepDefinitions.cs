@@ -1,44 +1,34 @@
 ﻿
 
+using LabCorp.Drivers;
 using Microsoft.Extensions.Configuration;
+using NUnit.Framework;
+using OpenQA.Selenium;
 
 namespace LabCorp.Steps;
 
 [Binding]
 public sealed class CalculatorStepDefinitions
 {
-    private readonly IConfiguration _configuration;
+    private IWebDriver _webDriver;
+    private ScenarioContext _scenarioContext;
+    
 
-    public CalculatorStepDefinitions(IConfiguration configuration)
+    public CalculatorStepDefinitions(ScenarioContext scenarioContext)
     {
-        _configuration = configuration;
+        _scenarioContext = scenarioContext;
     }
 
     [Given("the first number is (.*)")]
     public void GivenTheFirstNumberIs(int number)
     {
-        Console.WriteLine("Given statement------");
-        string browser = _configuration["MySettings:Browser"];
-        string webEnvironment = _configuration["MySettings:WebEnvironment"];
-        Console.WriteLine(browser);
-        Console.WriteLine(webEnvironment);
+        _webDriver = _scenarioContext.Get<SeleniumDriver>("SeleniumDriver").getDriver();
+        _webDriver.Url = "https://www.labcorp.com/";
     }
 
-    [Given("the second number is (.*)")]
-    public void GivenTheSecondNumberIs(int number)
+    [Then(@"validate")]
+    public void ThenValidate()
     {
-        Console.WriteLine("Method");
-    }
-
-    [When("the two numbers are added")]
-    public void WhenTheTwoNumbersAreAdded()
-    {
-        Console.WriteLine("Method");
-    }
-
-    [Then("the result should be (.*)")]
-    public void ThenTheResultShouldBe(int result)
-    {
-        Console.WriteLine("Method");
+        Assert.True(true);
     }
 }
