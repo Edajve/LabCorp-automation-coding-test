@@ -13,7 +13,7 @@ public sealed class TaskOneSteps
     private IWebDriver _driver;
     private ScenarioContext _scenarioContext;
     private Dictionary<string, string> _individualJobApplicationDetails;
-    private Dictionary<string, string> _individualJobApplicationDetailsOnCareerPage;
+    private string allText;
 
 
     public TaskOneSteps(ScenarioContext scenarioContext)
@@ -44,12 +44,6 @@ public sealed class TaskOneSteps
         CareerPage careerPage = new CareerPage(_driver);
         careerPage.SearchCareerPosition(position);
         careerPage.ClickFirstApplication();
-        
-        // _individualJobApplicationDetailsOnCareerPage = careerPage.GetAssertionMapForIndividualApplication();
-        // foreach (var kvp in _individualJobApplicationDetailsOnCareerPage)
-        // {
-        //     Console.WriteLine($"Key: {kvp.Key}, Value: {kvp.Value}");
-        // }
     }
 
     [Then(@"user returns back to list of applications")]
@@ -61,7 +55,7 @@ public sealed class TaskOneSteps
         
         // foreach (var kvp in _individualJobApplicationDetails)
         // {
-        //     Console.WriteLine($"Key: {kvp.Key}, Value: {kvp.Value}");
+        //     Console.WriteLine(kvp.Value);
         // }
     }
 }
