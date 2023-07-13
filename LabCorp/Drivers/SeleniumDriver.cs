@@ -12,15 +12,4 @@ public class SeleniumDriver
     {
         _scenarioContext = scenarioContext;
     }
-
-    public IWebDriver getDriver()
-    {
-        var chromeOptions = new ChromeOptions();
-        chromeOptions.AddArguments("--start-maximized");
-
-        _driver = new ChromeDriver(chromeOptions);
-        _scenarioContext.Set(_driver, "webDriver");
-
-        return _driver;
-    }
 }

@@ -21,12 +21,14 @@ namespace LabCorp.Features
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Lab Corp Coding Test")]
+    [NUnit.Framework.CategoryAttribute("frontend")]
     public partial class LabCorpCodingTestFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-        private string[] _featureTags = ((string[])(null));
+        private string[] _featureTags = new string[] {
+                "frontend"};
         
 #line 1 "TaskOne.feature"
 #line hidden
@@ -35,7 +37,8 @@ namespace LabCorp.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Lab Corp Coding Test", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Lab Corp Coding Test", null, ProgrammingLanguage.CSharp, new string[] {
+                        "frontend"});
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,9 +78,9 @@ namespace LabCorp.Features
         
         public virtual void FeatureBackground()
         {
-#line 3
-    #line hidden
 #line 4
+    #line hidden
+#line 5
         testRunner.Given("user is on Lab Corp website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
         }
@@ -89,7 +92,7 @@ namespace LabCorp.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("First Assignment", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 6
+#line 7
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -109,16 +112,16 @@ namespace LabCorp.Features
             else
             {
                 this.ScenarioStart();
-#line 3
+#line 4
     this.FeatureBackground();
 #line hidden
-#line 7
+#line 8
         testRunner.Given("user navigates to career page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 8
+#line 9
         testRunner.Then("user searches for \"Sr. Business Analyst\" Career position", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 9
+#line 10
         testRunner.Then("user returns back to list of applications", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

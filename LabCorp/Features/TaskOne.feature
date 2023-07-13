@@ -1,4 +1,5 @@
-﻿Feature: Lab Corp Coding Test
+﻿@frontend
+Feature: Lab Corp Coding Test
 
     Background:
         Given user is on Lab Corp website

@@ -1,8 +1,6 @@
 using BoDi;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using LabCorp.Drivers;
-using TechTalk.SpecFlow;
+using OpenQA.Selenium;
 
 namespace LabCorp.utils
 {
@@ -34,7 +32,7 @@ namespace LabCorp.utils
             }
             else if (isApi)
             {
-                // Add any setup specific to API tests here
+                // API set up
             }
         }
 
@@ -53,20 +51,18 @@ namespace LabCorp.utils
             }
             else if (isApi)
             {
-                // Add any cleanup specific to each API scenario here
+                // API cleann up
             }
         }
 
         [BeforeFeature]
         public static void BeforeFeature()
         {
-            // Add any setup specific to frontend tests here
         }
 
         [BeforeFeature("api")]
         public static void BeforeApiFeature()
         {
-            // Add any setup specific to API tests here
         }
     }
 }
