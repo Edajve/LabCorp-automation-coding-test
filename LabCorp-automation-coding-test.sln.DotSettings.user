@@ -1,6 +1,19 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=966c1a43_002D92b9_002D4fe4_002Dbb3b_002Dea9a92c7e263/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CalculatorFeature" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4e4c92ce_002Dc12f_002D46de_002D8ef0_002D96aa1f1565f7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AssignmentTwoFeature" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::BC0933B9-2EF3-4145-8405-170114BF0ACD::net6.0::LabCorp.Features.AssignmentTwoFeature&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=966c1a43_002D92b9_002D4fe4_002Dbb3b_002Dea9a92c7e263/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CalculatorFeature" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::BC0933B9-2EF3-4145-8405-170114BF0ACD::net6.0::LabCorp.Features.LabCorpCodingTestFeature&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::BC0933B9-2EF3-4145-8405-170114BF0ACD::net6.0::LabCorp.Features.AssignmentTwoFeature&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9c21b511_002Def95_002D4119_002D8b3e_002D8b4d113698bc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="LabCorpCodingTestFeature" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::BC0933B9-2EF3-4145-8405-170114BF0ACD::net6.0::LabCorp.Features.LabCorpCodingTestFeature&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::BC0933B9-2EF3-4145-8405-170114BF0ACD::net6.0::LabCorp.Features.AssignmentTwoFeature.CreateAndRetrieveAUser&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::BC0933B9-2EF3-4145-8405-170114BF0ACD::net6.0::LabCorp.Features.AssignmentTwoFeature&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

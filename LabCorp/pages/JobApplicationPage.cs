@@ -22,10 +22,9 @@ namespace LabCorp.pages
             By.CssSelector("div.jd-info.au-target[data-ph-at-id='jobdescription-text']");
 
         private static readonly By LocationOfJob = By.CssSelector("span.au-target.job-location");
-
-        private static readonly By LeftArrowElement =
-            By.CssSelector("i.icon.icon-left-arrow[data-ph-id='ph-page-element-page4-8d1JRL']");
-
+        
+        static string cssSelector = "a.phs-back-search-results";
+        By returnToApplicationsBtn = By.CssSelector(cssSelector);
 
         public JobApplicationPage(IWebDriver driver)
         {
@@ -37,8 +36,8 @@ namespace LabCorp.pages
 
         public void ReturnToApplicationList()
         {
-            _helpers.ExplicitWaitForElement(LeftArrowElement);
-            _driver.FindElement(LeftArrowElement).Click();
+            _helpers.ExplicitWaitForElement(returnToApplicationsBtn);
+            _driver.FindElement(returnToApplicationsBtn).Click();
         }
 
         private void AddByElementsToList()
