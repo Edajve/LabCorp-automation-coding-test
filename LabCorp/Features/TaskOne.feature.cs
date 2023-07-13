@@ -118,6 +118,9 @@ namespace LabCorp.Features
 #line 8
         testRunner.Then("user searches for \"Route Coordinator/Disptacher\" Career position", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
+#line 9
+        testRunner.Then("user returns back to list of applications", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
             }
             this.ScenarioCleanup();
         }

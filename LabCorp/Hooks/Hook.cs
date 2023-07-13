@@ -10,7 +10,7 @@ public class Hooks
     {
         _scenarioContext = scenarioContext;
     }
-    
+
     [BeforeScenario]
     public void BeforeScenario()
     {
